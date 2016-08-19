@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT([libsonic-nas-platform-vm],[1.0.1])
-AM_INIT_AUTOMAKE([subdir-objects])
+AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_CONFIG_SRCDIR([src])
 
 # Checks for programs.
