@@ -1,3 +1,5 @@
+ACLOCAL_AMFLAGS=-I m4
+
 cfgdir = $(sysconfdir)/sonic
 cfg_SCRIPTS = cfg/*.xml
 
