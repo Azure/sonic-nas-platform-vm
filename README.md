@@ -6,7 +6,7 @@ VM (virtual machine) platform specific utilities for the SONiC project
 Description
 -----------
 
-This repo contains VM platform specific files and implementation for the Network abstraction service. There are confiugration files in this repo that defined port mapping etc.
+This repo contains VM platform specific files and implementation for the Network abstraction service. There are configuration files in this repo that define port mapping etc.
 
 Building
 ---------
