@@ -1,25 +1,22 @@
-SONiC NAS platform VM
+sonic-nas-platform-vm
 =====================
 
-VM (virtual machine) platform specific utilities for the SONiC project
+This repo contains virtual machine (VM) platform-specific files and implementation for the network abstraction service (NAS). The configuration files in this repo define port mapping, and so on.
 
-Description
------------
-
-This repo contains VM platform specific files and implementation for the Network abstraction service. There are configuration files in this repo that define port mapping etc.
-
-Building
+Build
 ---------
-Please see the instructions in the sonic-nas-manifest repo for more details on the common build tools.  [Sonic-nas-manifest](https://github.com/Azure/sonic-nas-manifest)
+See [sonic-nas-manifest](https://github.com/Azure/sonic-nas-manifest) for more information on common build tools.
 
-Build Requirements:
- - sonic-common-utils
- - sonic-object-library
- - sonic-base-model
- - sonic-logging
- - sonic-nas-ndi-api
+### Build requirements
+* `sonic-common-utils`
+* `sonic-object-library`
+* `sonic-base-model`
+* `sonic-logging`
+* `sonic-nas-ndi-api`
 
-Copy the debian files to the parent folder (default location of debian files) and then run the following command:
-BUILD CMD: sonic_build --dpkg libsonic-logging1 libsonic-logging-dev libsonic-common1 libsonic-common-dev libsonic-object-library1 libsonic-object-library-dev libsonic-model1 libsonic-model-dev sonic-ndi-api-dev -- clean binary
+Copy the Debian files to the parent folder (default location of Debian files) and then run the `sonic_build` command.
+
+### Build command
+    sonic_build --dpkg libsonic-logging1 libsonic-logging-dev libsonic-common1 libsonic-common-dev libsonic-object-library1 libsonic-object-library-dev libsonic-model1 libsonic-model-dev sonic-ndi-api-dev -- clean binary
 
 (c) Dell 2016
